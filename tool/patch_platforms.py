@@ -102,6 +102,15 @@ def android():
                 '    <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="%s"/>\n    </application>' % ADMOB_ANDROID,
                 1,
             )
+        # ML Kit modelleri APK'ya gömülmez (bkz. android/app/build.gradle.kts):
+        # Play hizmetleri Latin metin tanıma ve QR/barkod modellerini kurulumda
+        # indirir; diğer yazı modelleri ilk kullanımda bir kez iner.
+        if "com.google.mlkit.vision.DEPENDENCIES" not in s:
+            s = s.replace(
+                "</application>",
+                '    <meta-data android:name="com.google.mlkit.vision.DEPENDENCIES" android:value="ocr,barcode"/>\n    </application>',
+                1,
+            )
         # Firebase: ölçüm ve çökme raporu uygulama içinden (izinle) açılır;
         # reklam kimliği hiç toplanmaz.
         for k in ("firebase_analytics_collection_enabled", "google_analytics_adid_collection_enabled",
@@ -148,8 +157,8 @@ def android():
 -dontwarn androidx.work.**
 """
     # google_mlkit_text_recognition references the optional Chinese/Devanagari/
-    # Japanese/Korean recognizers; only the bundled Latin model is shipped, so
-    # R8 must not fail on those absent classes.
+    # Japanese/Korean recognizers; they now come from the Play services
+    # libraries, the rules stay harmless if a build lacks them.
     mlkit = """
 -dontwarn com.google.mlkit.vision.text.chinese.**
 -dontwarn com.google.mlkit.vision.text.devanagari.**
@@ -162,6 +171,12 @@ def android():
         write(rules, old)
     if "mlkit.vision.text.chinese" not in old:
         write(rules, old + mlkit)
+    # mobile_scanner: barkod modeli gömülü değil, Play hizmetlerinden (APK ~5 MB/ABI küçülür).
+    props = "android/gradle.properties"
+    if os.path.exists(props):
+        p = read(props)
+        if "mobile_scanner.useUnbundled" not in p:
+            write(props, p.rstrip("\n") + "\ndev.steenbakker.mobile_scanner.useUnbundled=true\n")
     for gradle in ["android/app/build.gradle.kts", "android/app/build.gradle"]:
         if not os.path.exists(gradle):
             continue
@@ -179,6 +194,24 @@ def android():
             s = s.replace("compileOptions {", "compileOptions {\n        isCoreLibraryDesugaringEnabled = true", 1)
         if kts and "desugar_jdk_libs" not in s:
             s += '\ndependencies {\n    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.4")\n}\n'
+        # Metin tanıma: gömülü Latin modeli (~11 MB/ABI yerel kitaplık + model)
+        # yerine Google Play hizmetleri sürümleri; modeller ilk kullanımda bir
+        # kez iner, sonra çevrimdışı çalışır. Aynı API sınıfları olduğundan
+        # eklenti değişmeden çalışır; Çince/Devanagari/Japonca/Korece de
+        # böylece Android'de gerçekten kullanılabilir olur.
+        if kts and "play-services-mlkit-text-recognition" not in s:
+            s += """
+configurations.all {
+    exclude(group = "com.google.mlkit", module = "text-recognition")
+}
+dependencies {
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition:19.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-chinese:16.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-devanagari:16.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-japanese:16.0.1")
+    implementation("com.google.android.gms:play-services-mlkit-text-recognition-korean:16.0.1")
+}
+"""
         # Release signing from CI secrets when available (see docs/RELEASE.md).
         if kts and os.environ.get("ANDROID_KEYSTORE_PATH") and "gs100Release" not in s:
             s = s.replace(
