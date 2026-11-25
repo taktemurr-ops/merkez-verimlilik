@@ -1,0 +1,194 @@
+name: merkez_verimlilik
+description: "Verimlilik merkez uygulaması: 29 çevrimdışı uygulama. Android, iOS ve Web."
+publish_to: none
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # Ortak çekirdek: https://github.com/taktemurr-ops/studio-core
+  studio_core:
+    git:
+      url: https://github.com/taktemurr-ops/studio-core
+      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+  # Uygulamaların ortak motoru
+  verimlilik_motoru:
+    git:
+      url: https://github.com/taktemurr-ops/verimlilik-motoru
+      ref: main
+  # Merkezdeki uygulamalar (her biri kendi deposunda)
+  uyg_not_defteri:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-not-defteri
+      ref: main
+  uyg_yapilacaklar_listesi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-yapilacaklar-listesi
+      ref: main
+  uyg_aliskanlik_takibi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-aliskanlik-takibi
+      ref: main
+  uyg_pomodoro:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-pomodoro
+      ref: main
+  uyg_kontrol_ve_alisveris_listesi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-kontrol-ve-alisveris-listesi
+      ref: main
+  uyg_ses_kaydedici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-ses-kaydedici
+      ref: main
+  uyg_belge_tarayici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-belge-tarayici
+      ref: main
+  uyg_pdf_goruntuleyici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-pdf-goruntuleyici
+      ref: main
+  uyg_hatirlatici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-hatirlatici
+      ref: main
+  uyg_cizim_defteri:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-cizim-defteri
+      ref: main
+  uyg_zihin_haritasi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-zihin-haritasi
+      ref: main
+  uyg_metin_araclari:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-metin-araclari
+      ref: main
+  uyg_ajanda_ve_gunluk:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-ajanda-ve-gunluk
+      ref: main
+  uyg_fatura_fis_takip:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-fatura-fis-takip
+      ref: main
+  uyg_kanban_panosu:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-kanban-panosu
+      ref: main
+  uyg_zaman_takibi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-zaman-takibi
+      ref: main
+  uyg_fatura_ve_teklif_hazirlayici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-fatura-ve-teklif-hazirlayici
+      ref: main
+  uyg_kartvizit_tarayici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-kartvizit-tarayici
+      ref: main
+  uyg_gorselden_metin:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-gorselden-metin
+      ref: main
+  uyg_cevrimdisi_ceviri:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-cevrimdisi-ceviri
+      ref: main
+  uyg_sesten_yaziya_not:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-sesten-yaziya-not
+      ref: main
+  uyg_okuma_listesi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-okuma-listesi
+      ref: main
+  uyg_film_ve_dizi_izleme_listesi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-film-ve-dizi-izleme-listesi
+      ref: main
+  uyg_ders_programi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-ders-programi
+      ref: main
+  uyg_odev_takibi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-odev-takibi
+      ref: main
+  uyg_vardiya_planlayici:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-vardiya-planlayici
+      ref: main
+  uyg_sunum_zamanlayici_ve_teleprompter:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-sunum-zamanlayici-ve-teleprompter
+      ref: main
+  uyg_pano_gecmisi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-pano-gecmisi
+      ref: main
+  uyg_etiket_ve_envanter:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-etiket-ve-envanter
+      ref: main
+  flutter_localizations:
+    sdk: flutter
+  flutter_riverpod: ^2.6.1
+  shared_preferences: ^2.3.2
+  audioplayers: ^6.5.0
+  google_mobile_ads: ^9.2.0
+  in_app_purchase: ^3.2.0
+
+dependency_overrides:
+  # Bütün uygulamalar aynı çekirdek ve motor sürümünü kullansın.
+  studio_core:
+    git:
+      url: https://github.com/taktemurr-ops/studio-core
+      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+  verimlilik_motoru:
+    git:
+      url: https://github.com/taktemurr-ops/verimlilik-motoru
+      ref: main
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_driver:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.1
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/config/
+    - assets/branding/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  remove_alpha_ios: true
+  image_path: assets/branding/icon.png
+  adaptive_icon_background: "#171640"
+  adaptive_icon_foreground: assets/branding/icon_foreground.png
+  web:
+    generate: true
+    image_path: assets/branding/icon.png
+    background_color: "#171640"
+    theme_color: "#171640"
+
+flutter_native_splash:
+  color: "#171640"
+  image: assets/branding/splash.png
+  android_12:
+    color: "#171640"
+    image: assets/branding/splash_android12.png
+  web: true

@@ -1,0 +1,9 @@
+29 ruhige Offline-Apps für Notizen, Aufgaben, Zeit und Dokumente.
+
+• Notizen und Schreiben: Notizblock, Skizzenbuch, Mindmap, Textwerkzeuge, Planer & Tagebuch, Zwischenablage-Verlauf
+• Aufgaben und Gewohnheiten: Aufgabenliste, Gewohnheitstracker, Checkliste & Einkaufsliste, Erinnerungen, Kanban-Board, Hausaufgabenplaner
+• Zeit und Planung: Fokus-Timer, Zeiterfassung, Stundenplan, Schichtplaner, Präsentationstimer & Teleprompter
+• Dokumente und Scannen: Dokumentenscanner, PDF-Betrachter, Visitenkarten-Scanner, Bild zu Text
+• Sprache und Ton: Diktiergerät, Offline-Übersetzer, Sprache-zu-Text-Notizen
+• Arbeit und Geld: Beleg-Tracker, Rechnungs- & Angebotsersteller
+• Sammlungen: Leseliste, Film- & Serien-Merkliste, Etiketten & Inventar

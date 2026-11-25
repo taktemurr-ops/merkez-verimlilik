@@ -1,0 +1,9 @@
+29 simpleng offline na app para sa tala, gawain, oras at dokumento.
+
+• Tala at pagsulat: Notepad, Sketchbook, Mind Map, Text Tools, Planner at Talaarawan, Clipboard History
+• Gawain at gawi: Listahan ng Gagawin, Habit Tracker, Checklist at Listahan ng Bibilhin, Mga Paalala, Kanban Board, Homework Planner
+• Oras at pagpaplano: Focus Timer, Time Tracker, Iskedyul ng Klase, Shift Planner, Presentation Timer at Teleprompter
+• Dokumento at pag-scan: Document Scanner, PDF Viewer, Business Card Scanner, Larawan sa Teksto
+• Boses at wika: Voice Recorder, Offline na Tagasalin, Boses sa Teksto na Tala
+• Trabaho at pera: Receipt Tracker, Invoice at Quote Maker
+• Mga koleksyon: Listahan ng Babasahin, Watchlist ng Pelikula at Serye, Label at Imbentaryo

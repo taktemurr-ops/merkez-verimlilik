@@ -1,0 +1,9 @@
+29 calm, offline apps for notes, tasks, time and documents.
+
+• Notes & Writing: Notepad, Sketchbook, Mind Map, Text Tools, Planner & Journal, Clipboard History
+• Tasks & Habits: To-Do List, Habit Tracker, Checklist & Shopping List, Reminders, Kanban Board, Homework Planner
+• Time & Planning: Focus Timer, Time Tracker, Class Timetable, Shift Planner, Presentation Timer & Teleprompter
+• Documents & Scanning: Document Scanner, PDF Viewer, Business Card Scanner, Image to Text
+• Voice & Language: Voice Recorder, Offline Translator, Voice to Text Notes
+• Work & Money: Receipt Tracker, Invoice & Quote Maker
+• Collections: Reading List, Movie & Series Watchlist, Labels & Inventory

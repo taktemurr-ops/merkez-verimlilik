@@ -1,0 +1,9 @@
+29 spokojnych aplikacji offline do notatek, zadań, czasu i dokumentów.
+
+• Notatki i pisanie: Notatnik, Szkicownik, Mapa myśli, Narzędzia tekstowe, Planer i dziennik, Historia schowka
+• Zadania i nawyki: Lista zadań, Śledzenie nawyków, Lista kontrolna i zakupów, Przypomnienia, Tablica Kanban, Planer zadań domowych
+• Czas i planowanie: Minutnik skupienia, Śledzenie czasu, Plan lekcji, Planer zmian, Minutnik prezentacji i prompter
+• Dokumenty i skanowanie: Skaner dokumentów, Przeglądarka PDF, Skaner wizytówek, Obraz na tekst
+• Głos i język: Dyktafon, Tłumacz offline, Notatki głosowe na tekst
+• Praca i pieniądze: Śledzenie paragonów, Faktury i oferty
+• Kolekcje: Lista lektur, Lista filmów i seriali, Etykiety i inwentarz
