@@ -257,14 +257,26 @@ def ios():
             s = s[:idx] + extra + s[idx:]
         write(plist, s)
     podfile = "ios/Podfile"
+    # `flutter create` does not write a Podfile; Flutter would generate one at
+    # build time with its default (too low) iOS target. Google ML Kit pods
+    # (text recognition / translation) need iOS 15.5, so create it from the
+    # SDK template now and raise the platform.
+    if not os.path.exists(podfile) and os.path.isdir("ios"):
+        import shutil
+        fl = shutil.which("flutter")
+        if fl:
+            root = os.path.dirname(os.path.dirname(os.path.realpath(fl)))
+            tpl = os.path.join(root, "packages", "flutter_tools", "templates", "cocoapods", "Podfile-ios")
+            if os.path.exists(tpl):
+                shutil.copy(tpl, podfile)
     if os.path.exists(podfile):
         s = read(podfile)
-        s = re.sub(r"#?\s*platform :ios, '[0-9.]+'", "platform :ios, '15.0'", s, count=1)
+        s = re.sub(r"#?\s*platform :ios, '[0-9.]+'", "platform :ios, '15.5'", s, count=1)
         write(podfile, s)
     pbx = "ios/Runner.xcodeproj/project.pbxproj"
     if os.path.exists(pbx):
         s = read(pbx)
-        s = re.sub(r"IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;", "IPHONEOS_DEPLOYMENT_TARGET = 15.0;", s)
+        s = re.sub(r"IPHONEOS_DEPLOYMENT_TARGET = [0-9.]+;", "IPHONEOS_DEPLOYMENT_TARGET = 15.5;", s)
         # Universal app: iPhone (1) + iPad (2).
         s = re.sub(r'TARGETED_DEVICE_FAMILY = "?[0-9,]+"?;', 'TARGETED_DEVICE_FAMILY = "1,2";', s)
         write(pbx, s)
