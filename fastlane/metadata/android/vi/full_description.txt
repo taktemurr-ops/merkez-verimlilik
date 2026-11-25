@@ -1,9 +1,9 @@
-29 ứng dụng ngoại tuyến gọn nhẹ cho ghi chú, công việc, thời gian và tài liệu.
+32 ứng dụng ngoại tuyến gọn nhẹ cho ghi chú, công việc, thời gian và tài liệu.
 
 • Ghi chú & viết: Sổ ghi chú, Sổ phác thảo, Sơ đồ tư duy, Công cụ văn bản, Lịch & nhật ký, Lịch sử bộ nhớ tạm
-• Việc & thói quen: Danh sách việc cần làm, Theo dõi thói quen, Danh sách kiểm & mua sắm, Lời nhắc, Bảng Kanban, Kế hoạch bài tập
-• Thời gian & kế hoạch: Hẹn giờ tập trung, Theo dõi thời gian, Thời khóa biểu, Lịch ca làm, Hẹn giờ thuyết trình & máy nhắc chữ
+• Việc & thói quen: Danh sách việc cần làm, Theo dõi thói quen, Danh sách kiểm & mua sắm, Lời nhắc, Bảng Kanban, Kế hoạch bài tập, Mục tiêu & OKR
+• Thời gian & kế hoạch: Hẹn giờ tập trung, Theo dõi thời gian, Thời khóa biểu, Lịch ca làm, Hẹn giờ thuyết trình & máy nhắc chữ, Tiến độ dự án
 • Tài liệu & quét: Quét tài liệu, Xem PDF, Quét danh thiếp, Ảnh sang văn bản
 • Giọng nói & ngôn ngữ: Máy ghi âm, Dịch ngoại tuyến, Ghi chú giọng nói thành chữ
 • Công việc & tiền: Theo dõi biên lai, Tạo hóa đơn & báo giá
-• Bộ sưu tập: Danh sách đọc, Danh sách phim, Nhãn & kiểm kê
+• Bộ sưu tập: Danh sách đọc, Danh sách phim, Nhãn & kiểm kê, Kho mật khẩu

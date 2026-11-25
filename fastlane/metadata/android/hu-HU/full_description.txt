@@ -1,9 +1,9 @@
-29 nyugodt, offline alkalmazás jegyzetekhez, feladatokhoz, időhöz és dokumentumokhoz.
+32 nyugodt, offline alkalmazás jegyzetekhez, feladatokhoz, időhöz és dokumentumokhoz.
 
 • Jegyzetek és írás: Jegyzettömb, Vázlatfüzet, Gondolattérkép, Szövegeszközök, Határidőnapló és napló, Vágólap-előzmények
-• Feladatok és szokások: Teendőlista, Szokáskövető, Ellenőrző és bevásárlólista, Emlékeztetők, Kanban tábla, Házifeladat-tervező
-• Idő és tervezés: Fókuszidőzítő, Időkövetés, Órarend, Műszaktervező, Előadásidőzítő és súgógép
+• Feladatok és szokások: Teendőlista, Szokáskövető, Ellenőrző és bevásárlólista, Emlékeztetők, Kanban tábla, Házifeladat-tervező, Célok és OKR
+• Idő és tervezés: Fókuszidőzítő, Időkövetés, Órarend, Műszaktervező, Előadásidőzítő és súgógép, Projekt-ütemterv
 • Dokumentumok és beolvasás: Dokumentumszkenner, PDF-megjelenítő, Névjegykártya-olvasó, Képből szöveg
 • Hang és nyelv: Hangrögzítő, Offline fordító, Hangból szöveg jegyzetek
 • Munka és pénz: Nyugtakövető, Számla- és árajánlatkészítő
-• Gyűjtemények: Olvasási lista, Film- és sorozatlista, Címkék és leltár
+• Gyűjtemények: Olvasási lista, Film- és sorozatlista, Címkék és leltár, Jelszótár

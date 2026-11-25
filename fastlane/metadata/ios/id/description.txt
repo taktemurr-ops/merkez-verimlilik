@@ -1,9 +1,9 @@
-29 aplikasi offline yang tenang untuk catatan, tugas, waktu, dan dokumen.
+32 aplikasi offline yang tenang untuk catatan, tugas, waktu, dan dokumen.
 
 • Catatan & tulisan: Buku Catatan, Buku Sketsa, Peta Pikiran, Alat Teks, Agenda & Jurnal, Riwayat Papan Klip
-• Tugas & kebiasaan: Daftar Tugas, Pelacak Kebiasaan, Daftar Periksa & Belanja, Pengingat, Papan Kanban, Perencana PR
-• Waktu & perencanaan: Timer Fokus, Pelacak Waktu, Jadwal Pelajaran, Perencana Sif, Timer Presentasi & Teleprompter
+• Tugas & kebiasaan: Daftar Tugas, Pelacak Kebiasaan, Daftar Periksa & Belanja, Pengingat, Papan Kanban, Perencana PR, Tujuan & OKR
+• Waktu & perencanaan: Timer Fokus, Pelacak Waktu, Jadwal Pelajaran, Perencana Sif, Timer Presentasi & Teleprompter, Linimasa proyek
 • Dokumen & pindai: Pemindai Dokumen, Penampil PDF, Pemindai Kartu Nama, Gambar ke Teks
 • Suara & bahasa: Perekam Suara, Penerjemah Offline, Catatan Suara ke Teks
 • Kerja & uang: Pelacak Struk, Pembuat Faktur & Penawaran
-• Koleksi: Daftar Bacaan, Daftar Film & Serial, Label & Inventaris
+• Koleksi: Daftar Bacaan, Daftar Film & Serial, Label & Inventaris, Brankas kata sandi
