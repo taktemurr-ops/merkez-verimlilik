@@ -1,0 +1,9 @@
+29 applis sobres et hors ligne pour notes, tâches, temps et documents.
+
+• Notes et écriture: Bloc-notes, Carnet de croquis, Carte mentale, Outils de texte, Agenda et journal, Historique du presse-papiers
+• Tâches et habitudes: Liste de tâches, Suivi des habitudes, Check-list et liste de courses, Rappels, Tableau Kanban, Agenda des devoirs
+• Temps et planification: Minuteur de concentration, Suivi du temps, Emploi du temps, Planning des équipes, Minuteur de présentation et prompteur
+• Documents et numérisation: Scanner de documents, Lecteur PDF, Scanner de cartes de visite, Image en texte
+• Voix et langues: Dictaphone, Traducteur hors ligne, Notes vocales en texte
+• Travail et argent: Suivi des reçus, Factures et devis
+• Collections: Liste de lecture, Liste de films et séries, Étiquettes et inventaire

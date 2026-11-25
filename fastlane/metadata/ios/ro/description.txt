@@ -1,0 +1,9 @@
+29 aplicații simple, offline, pentru notițe, sarcini, timp și documente.
+
+• Notițe și scris: Carnet de notițe, Caiet de schițe, Hartă mentală, Instrumente text, Agendă și jurnal, Istoric clipboard
+• Sarcini și obiceiuri: Listă de sarcini, Monitor de obiceiuri, Listă de verificare și cumpărături, Mementouri, Panou Kanban, Planificator de teme
+• Timp și planificare: Cronometru de concentrare, Pontaj, Orar, Planificator de ture, Cronometru de prezentare și teleprompter
+• Documente și scanare: Scanner de documente, Vizualizator PDF, Scanner cărți de vizită, Imagine în text
+• Voce și limbă: Reportofon, Traducător offline, Notițe vocale în text
+• Muncă și bani: Evidența bonurilor, Facturi și oferte
+• Colecții: Listă de lectură, Listă de filme și seriale, Etichete și inventar

@@ -1,0 +1,1 @@
+blocco,album,disegno,mappa,mentale,strumenti,testo,agenda,diario,cronologia,appunti,lista,cose,fare

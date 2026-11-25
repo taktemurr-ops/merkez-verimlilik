@@ -1,0 +1,1 @@
+notizblock,skizzenbuch,mindmap,textwerkzeuge,planer,tagebuch,zwischenablage,verlauf,aufgabenliste

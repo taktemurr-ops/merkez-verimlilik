@@ -13,7 +13,7 @@ dependencies:
   studio_core:
     git:
       url: https://github.com/taktemurr-ops/studio-core
-      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+      ref: 14dac3f9192e77fda961b85d5bc33d2effb12f4d
   # Uygulamaların ortak motoru
   verimlilik_motoru:
     git:
@@ -149,7 +149,7 @@ dependency_overrides:
   studio_core:
     git:
       url: https://github.com/taktemurr-ops/studio-core
-      ref: 92b51dd7d47c300d3611c448b5474fca5f793f2a
+      ref: 14dac3f9192e77fda961b85d5bc33d2effb12f4d
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
