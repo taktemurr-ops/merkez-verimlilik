@@ -147,9 +147,21 @@ def android():
 -keep class androidx.work.impl.** extends androidx.room.RoomDatabase { *; }
 -dontwarn androidx.work.**
 """
+    # google_mlkit_text_recognition references the optional Chinese/Devanagari/
+    # Japanese/Korean recognizers; only the bundled Latin model is shipped, so
+    # R8 must not fail on those absent classes.
+    mlkit = """
+-dontwarn com.google.mlkit.vision.text.chinese.**
+-dontwarn com.google.mlkit.vision.text.devanagari.**
+-dontwarn com.google.mlkit.vision.text.japanese.**
+-dontwarn com.google.mlkit.vision.text.korean.**
+"""
     old = read(rules) if os.path.exists(rules) else ""
     if "WorkDatabase_Impl" not in old:
-        write(rules, old + keep)
+        old = old + keep
+        write(rules, old)
+    if "mlkit.vision.text.chinese" not in old:
+        write(rules, old + mlkit)
     for gradle in ["android/app/build.gradle.kts", "android/app/build.gradle"]:
         if not os.path.exists(gradle):
             continue
