@@ -1,8 +1,8 @@
 # Verimlilik · Productivity (merkez-verimlilik)
 
-Verimlilik ailesinin **merkez uygulaması**: 29 sade, çevrimdışı uygulamayı tek uygulamada toplar
+Verimlilik ailesinin **merkez uygulaması**: 32 sade, çevrimdışı uygulamayı tek uygulamada toplar
 (not, görev, alışkanlık, zaman, belge tarama, PDF, ses, çeviri, listeler).
-Görünüm oyun merkezlerinin onaylı tasarım dilini izler (koyu degrade zemin, "29 Uygulama",
+Görünüm oyun merkezlerinin onaylı tasarım dilini izler (koyu degrade zemin, "32 Uygulama",
 yuvarlak arama, vurgu çerçeveli kutular). Alt gezinme: Ana Sayfa · Uygulamalar · Favoriler · Profil.
 
 - Çatı: [studio-core](https://github.com/taktemurr-ops/studio-core) `lib/apps` · Motor: [verimlilik-motoru](https://github.com/taktemurr-ops/verimlilik-motoru)

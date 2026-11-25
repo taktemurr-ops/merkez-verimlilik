@@ -1,5 +1,5 @@
 name: merkez_verimlilik
-description: "Verimlilik merkez uygulaması: 29 çevrimdışı uygulama. Android, iOS ve Web."
+description: "Verimlilik merkez uygulaması: 32 çevrimdışı uygulama. Android, iOS ve Web."
 publish_to: none
 version: 1.0.0+1
 
@@ -136,6 +136,18 @@ dependencies:
     git:
       url: https://github.com/taktemurr-ops/uyg-etiket-ve-envanter
       ref: 7bb08c4ca43bd69c8681a53b229f4cce3efa149e
+  uyg_sifre_kasasi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-sifre-kasasi
+      ref: main
+  uyg_hedef_takibi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-hedef-takibi
+      ref: main
+  uyg_proje_zaman_cizelgesi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-proje-zaman-cizelgesi
+      ref: main
   flutter_localizations:
     sdk: flutter
   flutter_riverpod: ^2.6.1

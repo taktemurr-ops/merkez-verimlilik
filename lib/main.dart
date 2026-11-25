@@ -13,6 +13,7 @@ import 'package:uyg_fatura_ve_teklif_hazirlayici/uyg_fatura_ve_teklif_hazirlayic
 import 'package:uyg_film_ve_dizi_izleme_listesi/uyg_film_ve_dizi_izleme_listesi.dart';
 import 'package:uyg_gorselden_metin/uyg_gorselden_metin.dart';
 import 'package:uyg_hatirlatici/uyg_hatirlatici.dart';
+import 'package:uyg_hedef_takibi/uyg_hedef_takibi.dart';
 import 'package:uyg_kanban_panosu/uyg_kanban_panosu.dart';
 import 'package:uyg_kartvizit_tarayici/uyg_kartvizit_tarayici.dart';
 import 'package:uyg_kontrol_ve_alisveris_listesi/uyg_kontrol_ve_alisveris_listesi.dart';
@@ -23,15 +24,17 @@ import 'package:uyg_okuma_listesi/uyg_okuma_listesi.dart';
 import 'package:uyg_pano_gecmisi/uyg_pano_gecmisi.dart';
 import 'package:uyg_pdf_goruntuleyici/uyg_pdf_goruntuleyici.dart';
 import 'package:uyg_pomodoro/uyg_pomodoro.dart';
+import 'package:uyg_proje_zaman_cizelgesi/uyg_proje_zaman_cizelgesi.dart';
 import 'package:uyg_ses_kaydedici/uyg_ses_kaydedici.dart';
 import 'package:uyg_sesten_yaziya_not/uyg_sesten_yaziya_not.dart';
+import 'package:uyg_sifre_kasasi/uyg_sifre_kasasi.dart';
 import 'package:uyg_sunum_zamanlayici_ve_teleprompter/uyg_sunum_zamanlayici_ve_teleprompter.dart';
 import 'package:uyg_vardiya_planlayici/uyg_vardiya_planlayici.dart';
 import 'package:uyg_yapilacaklar_listesi/uyg_yapilacaklar_listesi.dart';
 import 'package:uyg_zaman_takibi/uyg_zaman_takibi.dart';
 import 'package:uyg_zihin_haritasi/uyg_zihin_haritasi.dart';
 
-/// Verimlilik: 29 sade, çevrimdışı uygulama tek merkezde. Her uygulamanın
+/// Verimlilik: 32 sade, çevrimdışı uygulama tek merkezde. Her uygulamanın
 /// verisi ayrı saklanır; reklam yalnızca bir uygulamadan çıkarken ve en az
 /// 3 dakika arayla gösterilir, bir işin ortasında asla.
 final hubConfig = AppHubConfig(
@@ -71,6 +74,9 @@ final hubConfig = AppHubConfig(
     sunumZamanlayiciVeTeleprompterTool,
     panoGecmisiTool,
     etiketVeEnvanterTool,
+    sifreKasasiTool,
+    hedefTakibiTool,
+    projeZamanCizelgesiTool,
   ],
   featured: verFeatured,
   privacyUrl: 'https://github.com/taktemurr-ops/merkez-verimlilik/blob/main/PRIVACY.md',

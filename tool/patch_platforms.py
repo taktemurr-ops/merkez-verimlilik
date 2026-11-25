@@ -234,6 +234,24 @@ dependencies {
         write(gradle, s)
 
 
+def android_fragment_activity():
+    """Biyometrik kilit (local_auth) FlutterFragmentActivity ister."""
+    root = "android/app/src/main"
+    if not os.path.isdir(root):
+        return
+    for d, _, files in os.walk(root):
+        for f in files:
+            if f not in ("MainActivity.kt", "MainActivity.java"):
+                continue
+            p = os.path.join(d, f)
+            s = read(p)
+            if "FlutterFragmentActivity" in s:
+                continue
+            s = s.replace("io.flutter.embedding.android.FlutterActivity", "io.flutter.embedding.android.FlutterFragmentActivity")
+            s = re.sub(r"\bFlutterActivity\b", "FlutterFragmentActivity", s)
+            write(p, s)
+
+
 def ios():
     plist = "ios/Runner/Info.plist"
     if os.path.exists(plist):
@@ -248,6 +266,7 @@ def ios():
             ("NSCameraUsageDescription", "Kamera yalnızca belge, kartvizit, görselden metin ve QR etiket tarama sırasında kullanılır; görüntü cihazdan çıkmaz. / The camera is used only while scanning documents, business cards, text or QR labels; images stay on the device."),
             ("NSPhotoLibraryUsageDescription", "Galeriden yalnızca sizin seçtiğiniz fotoğraf taranmak için açılır. / Only the photo you pick is opened for scanning."),
             ("NSMicrophoneUsageDescription", "Mikrofon yalnızca ses kaydı ya da dikte başlattığınızda kullanılır. / The microphone is used only when you start a recording or dictation."),
+            ("NSFaceIDUsageDescription", "Face ID yalnızca Şifre Kasası'nı sizin açtığınız biyometrik kilitle açmak için kullanılır. / Face ID is used only to unlock the Password Vault if you turn on biometric unlock."),
             ("NSSpeechRecognitionUsageDescription", "Sesten yazıya not için konuşmanız metne çevrilir; mümkünse cihazda. / Your speech is turned into text for voice notes, on device when possible."),
         ):
             if key not in s:
@@ -342,6 +361,7 @@ def web():
 
 if __name__ == "__main__":
     android()
+    android_fragment_activity()
     ios()
     web()
     print("platform folders patched")
