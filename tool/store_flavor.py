@@ -198,7 +198,25 @@ def store_config(spec):
     return data
 
 
+HMS_RULES = """
+# HMS Core (tool/store_flavor.py): Huawei'nin önerdiği R8 kuralları; isteğe
+# bağlı HMS modülleri (HiAnalytics, tam IAP, Cronet) derlemede yoktur.
+-keepattributes *Annotation*,Exceptions,InnerClasses,Signature,SourceFile,LineNumberTable
+-keep class com.huawei.hianalytics.** { *; }
+-keep class com.huawei.updatesdk.** { *; }
+-keep class com.huawei.hms.** { *; }
+-keep class com.huawei.agconnect.** { *; }
+-keep class com.huawei.openalliance.ad.** { *; }
+-dontwarn com.huawei.**
+-dontwarn org.chromium.net.**
+"""
+
+
 def patch_huawei(spec, cfg):
+    rules = "android/app/proguard-rules.pro"
+    old = read(rules) if os.path.exists(rules) else ""
+    if "com.huawei.hms.**" not in old:
+        write(rules, old + HMS_RULES)
     man = "android/app/src/main/AndroidManifest.xml"
     if not os.path.exists(man):
         return
