@@ -177,11 +177,11 @@ dependency_overrides:
   studio_core:
     git:
       url: https://github.com/taktemurr-ops/studio-core
-      ref: 7e2e219a0cb2b9dc1d1b3e8f03cace0347001b10
+      ref: 4c60cae1c80dbec1f4bcd2a559ebf2dbddb8dd01
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
-      ref: ce1d0168612d4c13ca74b77a1a0042f4d6ffa3a3
+      ref: 3d5d2326bd746f7af9a6e535536b377c9880dcbf
 
 dev_dependencies:
   flutter_test:
