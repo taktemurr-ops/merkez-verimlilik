@@ -24,8 +24,7 @@ void main() {
     final c = hub.hubConfig;
     final issues = LayoutIssues();
     final trap = ErrorTrap();
-    final size = tester.view.physicalSize / tester.view.devicePixelRatio;
-    final dev = '${size.width.round()}x${size.height.round()}';
+    var dev = '?';
     var opened = 0;
 
     Future<void> wait(int ms) async {
@@ -43,6 +42,8 @@ void main() {
         await s.setLanguage(lang);
         await tester.pumpWidget(AppHubApp(config: c, services: s));
         await wait(1500);
+        final size = tester.binding.renderViews.first.size;
+        dev = '${size.width.round()}x${size.height.round()}';
         checkLayout(tester, issues, trap, 'merkez', '$dev $lang');
         // Alt gezinme sekmeleri.
         for (final icon in [Icons.apps_rounded, Icons.star_rounded, Icons.person_rounded, Icons.home_rounded]) {
