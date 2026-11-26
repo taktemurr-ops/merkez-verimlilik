@@ -1,0 +1,4 @@
+# Google Play paket adı ve App Store paket kimliği (iOS kimliği alt çizgi içeremez).
+package_name("com.gamestudio100.merkez_verimlilik")
+app_identifier("com.gamestudio100.merkezVerimlilik")
+team_id(ENV["APPLE_TEAM_ID"]) if ENV["APPLE_TEAM_ID"]
