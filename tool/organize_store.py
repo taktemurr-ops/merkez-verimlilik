@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """shots/raw altındaki görselleri fastlane düzenine yerleştirir:
 shots/store/android/<yerel>/images/{phoneScreenshots,tenInchScreenshots,featureGraphic.png}
-shots/store/ios/<yerel>/{N_iphone67.png,N_ipad13.png}
+shots/store/appstore/<yerel>/{N_iphone69.png,N_ipad13.png}  (çerçevesiz, tam ekran;
+boyut birebir olmalı: yeniden boyutlandırılmaz)
 Yerel klasör adları depodaki fastlane/metadata klasörlerinden alınır."""
 import glob, os, shutil
 from PIL import Image
@@ -29,6 +30,8 @@ for p in sorted(glob.glob('shots/raw/*.png')):
     img = Image.open(p).convert('RGB')
     want = SIZES[kind]
     if img.size != want:
+        if kind in ('iphone', 'ipad'):
+            raise SystemExit(f'{p}: {img.size} != {want} (App Store görseli birebir boyutta çizilmeli)')
         img = img.resize(want, Image.LANCZOS)
     if kind in ('phone', 'tablet', 'feature'):
         d = locale_dir('android', lang)
@@ -43,7 +46,7 @@ for p in sorted(glob.glob('shots/raw/*.png')):
         d = locale_dir('ios', lang)
         if d is None:
             missing.add(f'ios:{lang}'); continue
-        out = f'shots/store/ios/{d}/{parts[2]}_{"iphone67" if kind == "iphone" else "ipad13"}.png'
+        out = f'shots/store/appstore/{d}/{parts[2]}_{"iphone69" if kind == "iphone" else "ipad13"}.png'
     os.makedirs(os.path.dirname(out), exist_ok=True)
     img.save(out, optimize=True)
     n += 1

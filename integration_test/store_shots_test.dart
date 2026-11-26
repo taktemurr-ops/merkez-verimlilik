@@ -27,16 +27,18 @@ class _Target {
   final Size box; // mantıksal boyut
   final Size device; // çerçevedeki ekran
   final double ratio; // piksel oranı
-  const _Target(this.name, this.box, this.device, this.ratio);
+  final bool bleed; // App Store: çerçevesiz, tam ekran
+  const _Target(this.name, this.box, this.device, this.ratio, {this.bleed = false});
 }
 
-// Android telefon 1080×1920, Android tablet 1920×1080,
-// iPhone 6.7" 1290×2796, iPad 13" 2048×2732.
+// Play: Android telefon 1080×1920, tablet 1920×1080 (genel cihaz çerçeveli).
+// App Store: iPhone 6,9" 1290×2796, iPad 13" 2048×2732; cihaz çerçevesi YOK
+// (Apple 2.3.3), gerçek iOS mantıksal boyutunda tam ekran.
 const _targets = [
   _Target('phone', Size(360, 640), Size(400, 800), 3),
   _Target('tablet', Size(1280, 720), Size(1000, 620), 1.5),
-  _Target('iphone', Size(430, 932), Size(400, 860), 3),
-  _Target('ipad', Size(512, 683), Size(640, 860), 4),
+  _Target('iphone', Size(430, 932), Size.zero, 3, bleed: true),
+  _Target('ipad', Size(1024, 1366), Size.zero, 2, bleed: true),
 ];
 
 Widget _app(AppServices s, String lang, Widget child) {
@@ -81,7 +83,50 @@ Widget _fitCaption(String text, double maxW, double maxH, double size) {
   return Text(text, textAlign: TextAlign.center, maxLines: 2, style: st());
 }
 
+/// App Store görseli: cihaz çerçevesi YOK (Apple 2.3.3). Üstte isteğe bağlı
+/// başlık bandı, altında oyun ekranı kenardan kenara, gerçek iOS mantıksal
+/// boyutunda çizilir.
+Widget _bleedFrame({required Size box, required String caption, required Widget screen, required bool rtl}) {
+  final bg = hub.hubConfig.style.background;
+  final band = (box.height * 0.13).roundToDouble();
+  final screenSize = Size(box.width, box.height - band);
+  return Directionality(
+    textDirection: rtl ? TextDirection.rtl : TextDirection.ltr,
+    child: SizedBox(
+      width: box.width,
+      height: box.height,
+      child: Column(children: [
+        Container(
+          width: box.width,
+          height: band,
+          alignment: Alignment.center,
+          padding: EdgeInsets.symmetric(horizontal: box.width * 0.06),
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [hub.hubConfig.style.accent, bg.first],
+            ),
+          ),
+          child: _fitCaption(caption, box.width * 0.88, band * 0.86, math.min(box.width, box.height) * 0.064),
+        ),
+        SizedBox(
+          width: screenSize.width,
+          height: screenSize.height,
+          child: ClipRect(
+            child: MediaQuery(
+              data: MediaQueryData(size: screenSize, devicePixelRatio: 3, padding: EdgeInsets.zero),
+              child: screen,
+            ),
+          ),
+        ),
+      ]),
+    ),
+  );
+}
+
 Widget _frame({required _Target t, required String caption, required Widget screen, required bool rtl}) {
+  if (t.bleed) return _bleedFrame(box: t.box, caption: caption, screen: screen, rtl: rtl);
   final box = t.box, device = t.device;
   final bg = hub.hubConfig.style.background;
   return Directionality(
