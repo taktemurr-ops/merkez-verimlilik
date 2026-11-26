@@ -209,6 +209,8 @@ HMS_RULES = """
 -keep class com.huawei.openalliance.ad.** { *; }
 -dontwarn com.huawei.**
 -dontwarn org.chromium.net.**
+-dontwarn javax.xml.stream.**
+-dontwarn org.apache.tika.**
 """
 
 
