@@ -33,6 +33,7 @@ import 'package:uyg_vardiya_planlayici/uyg_vardiya_planlayici.dart';
 import 'package:uyg_yapilacaklar_listesi/uyg_yapilacaklar_listesi.dart';
 import 'package:uyg_zaman_takibi/uyg_zaman_takibi.dart';
 import 'package:uyg_zihin_haritasi/uyg_zihin_haritasi.dart';
+import 'store_flavor.dart';
 
 /// Verimlilik: 32 sade, çevrimdışı uygulama tek merkezde. Her uygulamanın
 /// verisi ayrı saklanır; reklam yalnızca bir uygulamadan çıkarken ve en az
@@ -82,4 +83,7 @@ final hubConfig = AppHubConfig(
   privacyUrl: 'https://github.com/taktemurr-ops/merkez-verimlilik/blob/main/PRIVACY.md',
 );
 
-void main() => bootstrapAppHub(hubConfig);
+void main() {
+  registerStoreFlavor();
+  bootstrapAppHub(hubConfig);
+}
