@@ -1,9 +1,9 @@
-32 rustige offline-apps voor notities, taken, tijd en documenten.
+36 rustige offline-apps voor notities, taken, tijd en documenten.
 
 • Notities en schrijven: Kladblok, Schetsboek, Mindmap, Teksthulpmiddelen, Agenda & dagboek, Klembordgeschiedenis
 • Taken en gewoonten: Takenlijst, Gewoontetracker, Checklist & boodschappenlijst, Herinneringen, Kanbanbord, Huiswerkplanner, Doelen en OKR
-• Tijd en planning: Focustimer, Urenregistratie, Lesrooster, Dienstenplanner, Presentatietimer & autocue, Projectplanning
-• Documenten en scannen: Documentscanner, PDF-viewer, Visitekaartjesscanner, Afbeelding naar tekst
+• Tijd en planning: Focustimer, Urenregistratie, Lesrooster, Dienstenplanner, Presentatietimer & autocue, Projectplanning, Focusslot
+• Documenten en scannen: Documentscanner, PDF-viewer, Visitekaartjesscanner, Afbeelding naar tekst, PDF ondertekenen en invullen, Cv-maker
 • Stem en taal: Spraakrecorder, Offline vertaler, Spraak-naar-tekstnotities
 • Werk en geld: Bonnetjes bijhouden, Facturen & offertes
-• Verzamelingen: Leeslijst, Film- & serielijst, Labels & inventaris, Wachtwoordkluis
+• Verzamelingen: Leeslijst, Film- & serielijst, Labels & inventaris, Wachtwoordkluis, Verificatiecodes

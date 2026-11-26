@@ -1,5 +1,5 @@
 name: merkez_verimlilik
-description: "Verimlilik merkez uygulaması: 32 çevrimdışı uygulama. Android, iOS ve Web."
+description: "Verimlilik merkez uygulaması: 36 çevrimdışı uygulama. Android, iOS ve Web."
 publish_to: none
 version: 1.0.0+1
 
@@ -18,7 +18,7 @@ dependencies:
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
-      ref: 2b787a33642bf4c0584ad6f1b97baba0fd6a1d16
+      ref: ce1d0168612d4c13ca74b77a1a0042f4d6ffa3a3
   # Merkezdeki uygulamalar (her biri kendi deposunda)
   uyg_not_defteri:
     git:
@@ -148,6 +148,22 @@ dependencies:
     git:
       url: https://github.com/taktemurr-ops/uyg-proje-zaman-cizelgesi
       ref: bad598d5bb3844d1305559269e1020aee2f6051e
+  uyg_dogrulama_kodlari:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-dogrulama-kodlari
+      ref: c9874c2112764384a1ea750077aabd632a9dc8c8
+  uyg_pdf_imza_ve_form:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-pdf-imza-ve-form
+      ref: ca49e5f54e1a053e777e9ea180eceab63e0cea5d
+  uyg_odak_kilidi:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-odak-kilidi
+      ref: fcc8c984e6e2b0f3500ed1e9f6552f497be8c685
+  uyg_ozgecmis_olusturucu:
+    git:
+      url: https://github.com/taktemurr-ops/uyg-ozgecmis-olusturucu
+      ref: 8feed83bb9b95b040ef6d19b0efc98587bb5b441
   flutter_localizations:
     sdk: flutter
   flutter_riverpod: ^2.6.1
@@ -165,7 +181,7 @@ dependency_overrides:
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
-      ref: 2b787a33642bf4c0584ad6f1b97baba0fd6a1d16
+      ref: ce1d0168612d4c13ca74b77a1a0042f4d6ffa3a3
 
 dev_dependencies:
   flutter_test:

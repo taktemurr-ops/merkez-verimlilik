@@ -1,9 +1,9 @@
-32 rolige frakoblede apper for notater, oppgaver, tid og dokumenter.
+36 rolige frakoblede apper for notater, oppgaver, tid og dokumenter.
 
 • Notater og skriving: Notisblokk, Skissebok, Tankekart, Tekstverktøy, Planlegger og dagbok, Utklippshistorikk
 • Oppgaver og vaner: Gjøremålsliste, Vanesporer, Sjekkliste og handleliste, Påminnelser, Kanbantavle, Lekseplanlegger, Mål og OKR
-• Tid og planlegging: Fokustidtaker, Tidsregistrering, Timeplan, Vaktplanlegger, Presentasjonstidtaker og teleprompter, Prosjekttidslinje
-• Dokumenter og skanning: Dokumentskanner, PDF-visning, Visittkortskanner, Bilde til tekst
+• Tid og planlegging: Fokustidtaker, Tidsregistrering, Timeplan, Vaktplanlegger, Presentasjonstidtaker og teleprompter, Prosjekttidslinje, Fokuslås
+• Dokumenter og skanning: Dokumentskanner, PDF-visning, Visittkortskanner, Bilde til tekst, Signer og fyll ut PDF, CV-bygger
 • Stemme og språk: Lydopptaker, Frakoblet oversetter, Tale til tekst-notater
 • Arbeid og penger: Kvitteringsoversikt, Fakturaer og tilbud
-• Samlinger: Leseliste, Film- og serieliste, Etiketter og lager, Passordhvelv
+• Samlinger: Leseliste, Film- og serieliste, Etiketter og lager, Passordhvelv, Bekreftelseskoder

@@ -1,9 +1,9 @@
-32 app semplici e offline per note, attività, tempo e documenti.
+36 app semplici e offline per note, attività, tempo e documenti.
 
 • Note e scrittura: Blocco note, Album da disegno, Mappa mentale, Strumenti di testo, Agenda e diario, Cronologia appunti
 • Attività e abitudini: Lista di cose da fare, Tracker abitudini, Checklist e lista della spesa, Promemoria, Bacheca Kanban, Planner dei compiti, Obiettivi e OKR
-• Tempo e pianificazione: Timer di concentrazione, Monitoraggio tempo, Orario delle lezioni, Pianificatore turni, Timer presentazioni e gobbo, Cronoprogramma
-• Documenti e scansione: Scanner documenti, Visualizzatore PDF, Scanner biglietti da visita, Da immagine a testo
+• Tempo e pianificazione: Timer di concentrazione, Monitoraggio tempo, Orario delle lezioni, Pianificatore turni, Timer presentazioni e gobbo, Cronoprogramma, Blocco concentrazione
+• Documenti e scansione: Scanner documenti, Visualizzatore PDF, Scanner biglietti da visita, Da immagine a testo, Firma e compila PDF, Crea curriculum
 • Voce e lingua: Registratore vocale, Traduttore offline, Note vocali in testo
 • Lavoro e denaro: Gestione scontrini, Fatture e preventivi
-• Raccolte: Lista di lettura, Lista film e serie, Etichette e inventario, Cassaforte password
+• Raccolte: Lista di lettura, Lista film e serie, Etichette e inventario, Cassaforte password, Codici di verifica

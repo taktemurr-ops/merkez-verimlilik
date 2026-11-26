@@ -1,9 +1,9 @@
-Not, görev, zaman ve belgeler için 32 sade, çevrimdışı uygulama.
+Not, görev, zaman ve belgeler için 36 sade, çevrimdışı uygulama.
 
 • Not ve Yazı: Not Defteri, Çizim Defteri, Zihin Haritası, Metin Araçları, Ajanda ve Günlük, Pano Geçmişi
 • Görev ve Alışkanlık: Yapılacaklar Listesi, Alışkanlık Takibi, Kontrol ve Alışveriş Listesi, Hatırlatıcı, Kanban Panosu, Ödev Takibi, Hedef ve OKR Takibi
-• Zaman ve Planlama: Odak Zamanlayıcı, Zaman Takibi, Ders Programı, Vardiya Planlayıcı, Sunum Zamanlayıcı ve Teleprompter, Proje Zaman Çizelgesi
-• Belge ve Tarama: Belge Tarayıcı, PDF Görüntüleyici, Kartvizit Tarayıcı, Görselden Metin
+• Zaman ve Planlama: Odak Zamanlayıcı, Zaman Takibi, Ders Programı, Vardiya Planlayıcı, Sunum Zamanlayıcı ve Teleprompter, Proje Zaman Çizelgesi, Odak Kilidi
+• Belge ve Tarama: Belge Tarayıcı, PDF Görüntüleyici, Kartvizit Tarayıcı, Görselden Metin, PDF İmzala ve Doldur, Özgeçmiş Oluşturucu
 • Ses ve Dil: Ses Kaydedici, Çevrimdışı Çeviri, Sesten Yazıya Not
 • İş ve Para: Fiş ve Fatura Takibi, Fatura ve Teklif Hazırlayıcı
-• Koleksiyonlar: Okuma Listesi, Film ve Dizi İzleme Listesi, Etiket ve Envanter, Şifre Kasası
+• Koleksiyonlar: Okuma Listesi, Film ve Dizi İzleme Listesi, Etiket ve Envanter, Şifre Kasası, Doğrulama Kodları

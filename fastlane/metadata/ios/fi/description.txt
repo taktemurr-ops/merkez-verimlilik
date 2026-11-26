@@ -1,9 +1,9 @@
-32 rauhallista offline-sovellusta muistiinpanoihin, tehtäviin, aikaan ja asiakirjoihin.
+36 rauhallista offline-sovellusta muistiinpanoihin, tehtäviin, aikaan ja asiakirjoihin.
 
 • Muistiinpanot ja kirjoitus: Muistio, Luonnoskirja, Miellekartta, Tekstityökalut, Kalenteri ja päiväkirja, Leikepöydän historia
 • Tehtävät ja tavat: Tehtävälista, Tapaseuranta, Tarkistus- ja ostoslista, Muistutukset, Kanban-taulu, Kotitehtäväsuunnittelija, Tavoitteet ja OKR
-• Aika ja suunnittelu: Keskittymisajastin, Ajanseuranta, Lukujärjestys, Vuorosuunnittelija, Esitysajastin ja telepromptteri, Projektin aikajana
-• Asiakirjat ja skannaus: Asiakirjaskanneri, PDF-katseluohjelma, Käyntikorttiskanneri, Kuvasta tekstiksi
+• Aika ja suunnittelu: Keskittymisajastin, Ajanseuranta, Lukujärjestys, Vuorosuunnittelija, Esitysajastin ja telepromptteri, Projektin aikajana, Keskittymislukko
+• Asiakirjat ja skannaus: Asiakirjaskanneri, PDF-katseluohjelma, Käyntikorttiskanneri, Kuvasta tekstiksi, Allekirjoita ja täytä PDF, Ansioluettelon tekijä
 • Ääni ja kieli: Äänitallennin, Offline-kääntäjä, Puheesta tekstiksi
 • Työ ja raha: Kuittiseuranta, Laskut ja tarjoukset
-• Kokoelmat: Lukulista, Elokuva- ja sarjalista, Tarrat ja inventaario, Salasanaholvi
+• Kokoelmat: Lukulista, Elokuva- ja sarjalista, Tarrat ja inventaario, Salasanaholvi, Vahvistuskoodit

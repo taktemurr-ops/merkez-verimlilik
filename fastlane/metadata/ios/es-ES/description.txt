@@ -1,9 +1,9 @@
-32 apps sencillas y sin conexión para notas, tareas, tiempo y documentos.
+36 apps sencillas y sin conexión para notas, tareas, tiempo y documentos.
 
 • Notas y escritura: Bloc de notas, Cuaderno de dibujo, Mapa mental, Herramientas de texto, Agenda y diario, Historial del portapapeles
 • Tareas y hábitos: Lista de tareas, Seguimiento de hábitos, Lista de control y compras, Recordatorios, Tablero Kanban, Agenda de deberes, Objetivos y OKR
-• Tiempo y planificación: Temporizador de enfoque, Control de tiempo, Horario de clases, Planificador de turnos, Temporizador de presentación y teleprompter, Cronograma de proyecto
-• Documentos y escaneo: Escáner de documentos, Visor de PDF, Escáner de tarjetas de visita, Imagen a texto
+• Tiempo y planificación: Temporizador de enfoque, Control de tiempo, Horario de clases, Planificador de turnos, Temporizador de presentación y teleprompter, Cronograma de proyecto, Bloqueo de concentración
+• Documentos y escaneo: Escáner de documentos, Visor de PDF, Escáner de tarjetas de visita, Imagen a texto, Firmar y rellenar PDF, Creador de currículum
 • Voz e idiomas: Grabadora de voz, Traductor sin conexión, Notas de voz a texto
 • Trabajo y dinero: Control de recibos, Creador de facturas y presupuestos
-• Colecciones: Lista de lectura, Lista de películas y series, Etiquetas e inventario, Bóveda de contraseñas
+• Colecciones: Lista de lectura, Lista de películas y series, Etiquetas e inventario, Bóveda de contraseñas, Códigos de verificación

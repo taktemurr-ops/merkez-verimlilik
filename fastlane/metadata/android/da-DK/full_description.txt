@@ -1,9 +1,9 @@
-32 rolige offline-apps til noter, opgaver, tid og dokumenter.
+36 rolige offline-apps til noter, opgaver, tid og dokumenter.
 
 • Noter og skrivning: Notesblok, Skitsebog, Tankekort, Tekstværktøjer, Kalender & dagbog, Udklipshistorik
 • Opgaver og vaner: Huskeliste, Vanetracker, Tjekliste & indkøbsliste, Påmindelser, Kanbantavle, Lektieplanlægger, Mål og OKR
-• Tid og planlægning: Fokustimer, Tidsregistrering, Skema, Vagtplanlægger, Præsentationstimer & teleprompter, Projekttidslinje
-• Dokumenter og scanning: Dokumentscanner, PDF-fremviser, Visitkortscanner, Billede til tekst
+• Tid og planlægning: Fokustimer, Tidsregistrering, Skema, Vagtplanlægger, Præsentationstimer & teleprompter, Projekttidslinje, Fokuslås
+• Dokumenter og scanning: Dokumentscanner, PDF-fremviser, Visitkortscanner, Billede til tekst, Underskriv og udfyld PDF, CV-bygger
 • Stemme og sprog: Lydoptager, Offline-oversætter, Tale til tekst-noter
 • Arbejde og penge: Kvitteringsoversigt, Fakturaer & tilbud
-• Samlinger: Læseliste, Film- og serieliste, Etiketter & lager, Adgangskodeboks
+• Samlinger: Læseliste, Film- og serieliste, Etiketter & lager, Adgangskodeboks, Godkendelseskoder

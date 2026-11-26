@@ -1,9 +1,9 @@
-32 apl luar talian yang ringkas untuk nota, tugasan, masa dan dokumen.
+36 apl luar talian yang ringkas untuk nota, tugasan, masa dan dokumen.
 
 • Nota & penulisan: Buku Nota, Buku Lakaran, Peta Minda, Alat Teks, Agenda & Jurnal, Sejarah Papan Keratan
 • Tugasan & tabiat: Senarai Tugasan, Penjejak Tabiat, Senarai Semak & Belian, Peringatan, Papan Kanban, Perancang Kerja Rumah, Matlamat & OKR
-• Masa & perancangan: Pemasa Fokus, Penjejak Masa, Jadual Waktu, Perancang Syif, Pemasa Pembentangan & Teleprompter, Garis masa projek
-• Dokumen & imbasan: Pengimbas Dokumen, Pemapar PDF, Pengimbas Kad Perniagaan, Imej ke Teks
+• Masa & perancangan: Pemasa Fokus, Penjejak Masa, Jadual Waktu, Perancang Syif, Pemasa Pembentangan & Teleprompter, Garis masa projek, Kunci fokus
+• Dokumen & imbasan: Pengimbas Dokumen, Pemapar PDF, Pengimbas Kad Perniagaan, Imej ke Teks, Tandatangan & isi PDF, Pembina resume
 • Suara & bahasa: Perakam Suara, Penterjemah Luar Talian, Nota Suara ke Teks
 • Kerja & wang: Penjejak Resit, Pembuat Invois & Sebut Harga
-• Koleksi: Senarai Bacaan, Senarai Filem & Siri, Label & Inventori, Peti besi kata laluan
+• Koleksi: Senarai Bacaan, Senarai Filem & Siri, Label & Inventori, Peti besi kata laluan, Kod pengesahan

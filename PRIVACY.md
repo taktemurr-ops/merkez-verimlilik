@@ -37,9 +37,17 @@ _Son güncelleme / Last updated: 2026-11-26_
 ### Türkçe
 - **Yedekleme:** Android'in kendi yedeklemesi açıksa uygulama verileri (ilerleme, ayarlar, kayıtlar) Google hesabınızdaki şifreli cihaz yedeğine dahil olabilir; bunu cihaz ayarlarından kapatabilirsiniz.
 - **Şifre Kasası:** Kasa yalnızca şifreli hâlde (Argon2id + AES-256-GCM) saklanır ve yedeklenir; ana şifre hiçbir yerde tutulmaz. Biyometrik açma anahtarı yalnızca bu cihazın güvenli deposunda kalır, yedeğe ve başka cihaza taşınmaz. Kasa ekranında ekran görüntüsü ve ekran kaydı engellenir.
+- **Doğrulama Kodları (2FA):** Gizli anahtarlar cihazın güvenli deposunda (Android Keystore / iOS Anahtar Zinciri) tutulan anahtarla AES-GCM ile şifrelenir; kodlar cihazda üretilir, hiçbir sunucuya gönderilmez. Kamera yalnızca QR kodu tararken kullanılır. Dışa aktarma yalnızca sizin belirlediğiniz parolayla şifreli yedek olarak yapılır.
+- **PDF İmzala ve Doldur:** Belgeler ve imzanız cihazda işlenir ve yalnızca sizin seçtiğiniz yere kaydedilir/paylaşılır. Bu bir nitelikli elektronik imza (e-imza) değildir; çizilen imza görüntüsü belgeye eklenir.
+- **Odak Kilidi (Android):** Seçtiğiniz uygulamaların ön plana gelip gelmediğini anlamak için "Kullanım erişimi" izni ve uyarı ekranı için "Diğer uygulamaların üzerinde göster" izni istenir; yalnızca odak oturumu sırasında kullanılır, kullanım verisi kaydedilmez ve cihazdan çıkmaz. iOS ve web'de yalnızca zamanlayıcı çalışır (sistem başka uygulamaları engellemeye izin vermez).
+- **Özgeçmiş Oluşturucu:** Bilgileriniz yalnızca cihazda saklanır; PDF cihazda üretilir. Bazı yazı sistemleri (Çince, Japonca, Korece, Hintçe, Tayca vb.) için yazı tipi ilk kullanımda Google Fonts'tan bir kez indirilir; bu indirmede özgeçmiş içeriği gönderilmez.
 
 ### English
 - **Backup:** If Android's own backup is on, app data (progress, settings, records) may be included in the encrypted device backup in your Google account; you can turn this off in the device settings.
 - **Password Vault:** The vault is stored and backed up only in encrypted form (Argon2id + AES-256-GCM); the master password is never stored. The biometric unlock key stays in this device's secure storage and is never backed up or moved. Screenshots and screen recording are blocked on the vault screen.
+- **Authenticator Codes (2FA):** Secret keys are encrypted with AES-GCM using a key held in the device's secure storage (Android Keystore / iOS Keychain); codes are generated on the device and never sent to any server. The camera is used only while scanning a QR code. Export is only an encrypted backup protected by a password you choose.
+- **PDF Sign & Fill:** Documents and your signature are processed on the device and saved/shared only where you choose. This is not a qualified electronic signature; the drawn signature image is placed on the document.
+- **Focus Lock (Android):** "Usage access" is requested to tell whether the apps you picked come to the foreground, and "Display over other apps" for the reminder screen; both are used only during a focus session, usage data is not stored and never leaves the device. On iOS and web only the timer works (the system does not allow blocking other apps).
+- **Resume Builder:** Your details stay on the device; the PDF is created on the device. For some scripts (Chinese, Japanese, Korean, Hindi, Thai, etc.) a font is downloaded once from Google Fonts on first use; no resume content is sent with that download.
 
 İletişim / Contact: (yayıncı e-posta adresi / publisher e-mail)

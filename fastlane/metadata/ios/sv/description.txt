@@ -1,9 +1,9 @@
-32 lugna offlineappar för anteckningar, uppgifter, tid och dokument.
+36 lugna offlineappar för anteckningar, uppgifter, tid och dokument.
 
 • Anteckningar och skrivande: Anteckningsblock, Skissbok, Tankekarta, Textverktyg, Planerare & dagbok, Urklippshistorik
 • Uppgifter och vanor: Att göra-lista, Vanespårare, Checklista & inköpslista, Påminnelser, Kanbantavla, Läxplanerare, Mål och OKR
-• Tid och planering: Fokustimer, Tidrapport, Schema, Schemaplanerare, Presentationstimer & teleprompter, Projekttidslinje
-• Dokument och skanning: Dokumentskanner, PDF-visare, Visitkortsskanner, Bild till text
+• Tid och planering: Fokustimer, Tidrapport, Schema, Schemaplanerare, Presentationstimer & teleprompter, Projekttidslinje, Fokuslås
+• Dokument och skanning: Dokumentskanner, PDF-visare, Visitkortsskanner, Bild till text, Signera och fyll i PDF, CV-byggare
 • Röst och språk: Röstinspelare, Offlineöversättare, Röst till text-anteckningar
 • Arbete och pengar: Kvittospårare, Fakturor & offerter
-• Samlingar: Läslista, Film- och serielista, Etiketter & inventarie, Lösenordsvalv
+• Samlingar: Läslista, Film- och serielista, Etiketter & inventarie, Lösenordsvalv, Verifieringskoder

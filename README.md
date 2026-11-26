@@ -1,8 +1,8 @@
 # Verimlilik · Productivity (merkez-verimlilik)
 
-Verimlilik ailesinin **merkez uygulaması**: 32 sade, çevrimdışı uygulamayı tek uygulamada toplar
+Verimlilik ailesinin **merkez uygulaması**: 36 sade, çevrimdışı uygulamayı tek uygulamada toplar
 (not, görev, alışkanlık, zaman, belge tarama, PDF, ses, çeviri, listeler).
-Görünüm oyun merkezlerinin onaylı tasarım dilini izler (koyu degrade zemin, "32 Uygulama",
+Görünüm oyun merkezlerinin onaylı tasarım dilini izler (koyu degrade zemin, "36 Uygulama",
 yuvarlak arama, vurgu çerçeveli kutular). Alt gezinme: Ana Sayfa · Uygulamalar · Favoriler · Profil.
 
 - Çatı: [studio-core](https://github.com/taktemurr-ops/studio-core) `lib/apps` · Motor: [verimlilik-motoru](https://github.com/taktemurr-ops/verimlilik-motoru)
@@ -45,3 +45,7 @@ yuvarlak arama, vurgu çerçeveli kutular). Alt gezinme: Ana Sayfa · Uygulamala
 | Şifre Kasası | [uyg-sifre-kasasi](https://github.com/taktemurr-ops/uyg-sifre-kasasi) |
 | Hedef ve OKR Takibi | [uyg-hedef-takibi](https://github.com/taktemurr-ops/uyg-hedef-takibi) |
 | Proje Zaman Çizelgesi | [uyg-proje-zaman-cizelgesi](https://github.com/taktemurr-ops/uyg-proje-zaman-cizelgesi) |
+| Doğrulama Kodları | [uyg-dogrulama-kodlari](https://github.com/taktemurr-ops/uyg-dogrulama-kodlari) |
+| PDF İmzala ve Doldur | [uyg-pdf-imza-ve-form](https://github.com/taktemurr-ops/uyg-pdf-imza-ve-form) |
+| Odak Kilidi | [uyg-odak-kilidi](https://github.com/taktemurr-ops/uyg-odak-kilidi) |
+| Özgeçmiş Oluşturucu | [uyg-ozgecmis-olusturucu](https://github.com/taktemurr-ops/uyg-ozgecmis-olusturucu) |

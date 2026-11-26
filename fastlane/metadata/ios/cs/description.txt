@@ -1,9 +1,9 @@
-32 klidných offline aplikací pro poznámky, úkoly, čas a dokumenty.
+36 klidných offline aplikací pro poznámky, úkoly, čas a dokumenty.
 
 • Poznámky a psaní: Poznámkový blok, Skicák, Myšlenková mapa, Textové nástroje, Diář a deník, Historie schránky
 • Úkoly a zvyky: Seznam úkolů, Sledování zvyků, Kontrolní a nákupní seznam, Připomínky, Kanban nástěnka, Plánovač úkolů, Cíle a OKR
-• Čas a plánování: Časovač soustředění, Sledování času, Rozvrh hodin, Plánovač směn, Časovač prezentace a čtecí zařízení, Časová osa projektu
-• Dokumenty a skenování: Skener dokumentů, Prohlížeč PDF, Skener vizitek, Obrázek na text
+• Čas a plánování: Časovač soustředění, Sledování času, Rozvrh hodin, Plánovač směn, Časovač prezentace a čtecí zařízení, Časová osa projektu, Zámek soustředění
+• Dokumenty a skenování: Skener dokumentů, Prohlížeč PDF, Skener vizitek, Obrázek na text, Podepsat a vyplnit PDF, Tvůrce životopisu
 • Hlas a jazyk: Diktafon, Offline překladač, Poznámky z hlasu do textu
 • Práce a peníze: Evidence účtenek, Faktury a nabídky
-• Sbírky: Seznam četby, Seznam filmů a seriálů, Štítky a inventář, Trezor hesel
+• Sbírky: Seznam četby, Seznam filmů a seriálů, Štítky a inventář, Trezor hesel, Ověřovací kódy

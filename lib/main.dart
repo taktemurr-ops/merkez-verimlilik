@@ -7,6 +7,7 @@ import 'package:uyg_belge_tarayici/uyg_belge_tarayici.dart';
 import 'package:uyg_cevrimdisi_ceviri/uyg_cevrimdisi_ceviri.dart';
 import 'package:uyg_cizim_defteri/uyg_cizim_defteri.dart';
 import 'package:uyg_ders_programi/uyg_ders_programi.dart';
+import 'package:uyg_dogrulama_kodlari/uyg_dogrulama_kodlari.dart';
 import 'package:uyg_etiket_ve_envanter/uyg_etiket_ve_envanter.dart';
 import 'package:uyg_fatura_fis_takip/uyg_fatura_fis_takip.dart';
 import 'package:uyg_fatura_ve_teklif_hazirlayici/uyg_fatura_ve_teklif_hazirlayici.dart';
@@ -19,10 +20,13 @@ import 'package:uyg_kartvizit_tarayici/uyg_kartvizit_tarayici.dart';
 import 'package:uyg_kontrol_ve_alisveris_listesi/uyg_kontrol_ve_alisveris_listesi.dart';
 import 'package:uyg_metin_araclari/uyg_metin_araclari.dart';
 import 'package:uyg_not_defteri/uyg_not_defteri.dart';
+import 'package:uyg_odak_kilidi/uyg_odak_kilidi.dart';
 import 'package:uyg_odev_takibi/uyg_odev_takibi.dart';
 import 'package:uyg_okuma_listesi/uyg_okuma_listesi.dart';
+import 'package:uyg_ozgecmis_olusturucu/uyg_ozgecmis_olusturucu.dart';
 import 'package:uyg_pano_gecmisi/uyg_pano_gecmisi.dart';
 import 'package:uyg_pdf_goruntuleyici/uyg_pdf_goruntuleyici.dart';
+import 'package:uyg_pdf_imza_ve_form/uyg_pdf_imza_ve_form.dart';
 import 'package:uyg_pomodoro/uyg_pomodoro.dart';
 import 'package:uyg_proje_zaman_cizelgesi/uyg_proje_zaman_cizelgesi.dart';
 import 'package:uyg_ses_kaydedici/uyg_ses_kaydedici.dart';
@@ -34,7 +38,7 @@ import 'package:uyg_yapilacaklar_listesi/uyg_yapilacaklar_listesi.dart';
 import 'package:uyg_zaman_takibi/uyg_zaman_takibi.dart';
 import 'package:uyg_zihin_haritasi/uyg_zihin_haritasi.dart';
 
-/// Verimlilik: 32 sade, çevrimdışı uygulama tek merkezde. Her uygulamanın
+/// Verimlilik: 36 sade, çevrimdışı uygulama tek merkezde. Her uygulamanın
 /// verisi ayrı saklanır; reklam yalnızca bir uygulamadan çıkarken ve en az
 /// 3 dakika arayla gösterilir, bir işin ortasında asla.
 final hubConfig = AppHubConfig(
@@ -77,6 +81,10 @@ final hubConfig = AppHubConfig(
     sifreKasasiTool,
     hedefTakibiTool,
     projeZamanCizelgesiTool,
+    dogrulamaKodlariTool,
+    pdfImzaVeFormTool,
+    odakKilidiTool,
+    ozgecmisOlusturucuTool,
   ],
   featured: verFeatured,
   // Masaüstü sürümünde gizli (kamera, ML Kit, sensör; bkz. ship/MASAUSTU_WEB.md).
