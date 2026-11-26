@@ -73,6 +73,10 @@ Future<void> _guarded(String screen, Future<void> Function() body) async {
 }
 
 void main() {
+  setUpAll(() async {
+    TestWidgetsFlutterBinding.ensureInitialized();
+    await loadRealFonts();
+  });
   tearDownAll(() => issues.printSummary('merkez_verimlilik'));
 
   testWidgets('merkez ana ekranları tüm boyutlarda', (tester) async {
