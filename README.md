@@ -42,3 +42,6 @@ yuvarlak arama, vurgu çerçeveli kutular). Alt gezinme: Ana Sayfa · Uygulamala
 | Sunum Zamanlayıcı ve Teleprompter | [uyg-sunum-zamanlayici-ve-teleprompter](https://github.com/taktemurr-ops/uyg-sunum-zamanlayici-ve-teleprompter) |
 | Pano Geçmişi | [uyg-pano-gecmisi](https://github.com/taktemurr-ops/uyg-pano-gecmisi) |
 | Etiket ve Envanter | [uyg-etiket-ve-envanter](https://github.com/taktemurr-ops/uyg-etiket-ve-envanter) |
+| Şifre Kasası | [uyg-sifre-kasasi](https://github.com/taktemurr-ops/uyg-sifre-kasasi) |
+| Hedef ve OKR Takibi | [uyg-hedef-takibi](https://github.com/taktemurr-ops/uyg-hedef-takibi) |
+| Proje Zaman Çizelgesi | [uyg-proje-zaman-cizelgesi](https://github.com/taktemurr-ops/uyg-proje-zaman-cizelgesi) |
