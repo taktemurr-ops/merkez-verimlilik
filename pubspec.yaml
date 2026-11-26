@@ -13,12 +13,12 @@ dependencies:
   studio_core:
     git:
       url: https://github.com/taktemurr-ops/studio-core
-      ref: 8eb30b12914d385b8e8560df8e23e01310fde0c3
+      ref: 7e2e219a0cb2b9dc1d1b3e8f03cace0347001b10
   # Uygulamaların ortak motoru
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
-      ref: d13ebf25392a498a8b314ff28bc7e9e5998b5b46
+      ref: 2b787a33642bf4c0584ad6f1b97baba0fd6a1d16
   # Merkezdeki uygulamalar (her biri kendi deposunda)
   uyg_not_defteri:
     git:
@@ -161,11 +161,11 @@ dependency_overrides:
   studio_core:
     git:
       url: https://github.com/taktemurr-ops/studio-core
-      ref: 8eb30b12914d385b8e8560df8e23e01310fde0c3
+      ref: 7e2e219a0cb2b9dc1d1b3e8f03cace0347001b10
   verimlilik_motoru:
     git:
       url: https://github.com/taktemurr-ops/verimlilik-motoru
-      ref: d13ebf25392a498a8b314ff28bc7e9e5998b5b46
+      ref: 2b787a33642bf4c0584ad6f1b97baba0fd6a1d16
 
 dev_dependencies:
   flutter_test:

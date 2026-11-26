@@ -79,6 +79,8 @@ final hubConfig = AppHubConfig(
     projeZamanCizelgesiTool,
   ],
   featured: verFeatured,
+  // Masaüstü sürümünde gizli (kamera, ML Kit, sensör; bkz. ship/MASAUSTU_WEB.md).
+  mobileOnly: const ['uyg-belge-tarayici', 'uyg-gorselden-metin', 'uyg-kartvizit-tarayici', 'uyg-cevrimdisi-ceviri', 'uyg-sesten-yaziya-not', 'uyg-sifre-kasasi'],
   privacyUrl: 'https://github.com/taktemurr-ops/merkez-verimlilik/blob/main/PRIVACY.md',
 );
 
