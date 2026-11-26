@@ -1,6 +1,6 @@
 # Gizlilik Politikası · Privacy Policy — Verimlilik / Productivity
 
-_Son güncelleme / Last updated: 2026-11-25_
+_Son güncelleme / Last updated: 2026-11-26_
 
 ## Türkçe
 - Uygulamalar internet olmadan çalışır. Notlar, görevler, kayıtlar, çizimler, belgeler ve ayarlar yalnızca **cihazınızda** saklanır; sunucumuz yoktur.
@@ -31,5 +31,15 @@ _Son güncelleme / Last updated: 2026-11-25_
 - In-app purchases are processed by Google Play / App Store; we never see payment details.
 - Profile → "Delete all my data" removes everything stored on the device.
 - No gambling, games of chance or 18+ content.
+
+## Ek: Veri akışı ve güvenlik / Addendum: data flows and security
+
+### Türkçe
+- **Yedekleme:** Android'in kendi yedeklemesi açıksa uygulama verileri (ilerleme, ayarlar, kayıtlar) Google hesabınızdaki şifreli cihaz yedeğine dahil olabilir; bunu cihaz ayarlarından kapatabilirsiniz.
+- **Şifre Kasası:** Kasa yalnızca şifreli hâlde (Argon2id + AES-256-GCM) saklanır ve yedeklenir; ana şifre hiçbir yerde tutulmaz. Biyometrik açma anahtarı yalnızca bu cihazın güvenli deposunda kalır, yedeğe ve başka cihaza taşınmaz. Kasa ekranında ekran görüntüsü ve ekran kaydı engellenir.
+
+### English
+- **Backup:** If Android's own backup is on, app data (progress, settings, records) may be included in the encrypted device backup in your Google account; you can turn this off in the device settings.
+- **Password Vault:** The vault is stored and backed up only in encrypted form (Argon2id + AES-256-GCM); the master password is never stored. The biometric unlock key stays in this device's secure storage and is never backed up or moved. Screenshots and screen recording are blocked on the vault screen.
 
 İletişim / Contact: (yayıncı e-posta adresi / publisher e-mail)
