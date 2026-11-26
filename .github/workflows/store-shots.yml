@@ -1,0 +1,72 @@
+name: Store screenshots (33 languages, Android phone/tablet + iPhone/iPad + feature graphic)
+
+# Merkezin onaylı tasarımdaki ekranlarından mağaza görselleri üretir; elle başlatılır.
+# Sonuç: "store" sürümüne store-graphics.zip (fastlane düzeninde) olarak yüklenir.
+on:
+  workflow_dispatch:
+    inputs:
+      langs:
+        description: "Virgülle diller (boş = 33 dilin hepsi)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+env:
+  FLUTTER_VERSION: "3.47.9"
+
+jobs:
+  shots:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: |
+          pip install pillow==11.0.0
+          python tool/generate_assets.py
+      - name: Linux build tools and fonts (Noto for all 33 languages)
+        run: |
+          sudo apt-get update -q
+          sudo apt-get install -yq clang cmake ninja-build pkg-config libgtk-3-dev xvfb libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev libsecret-1-dev libjsoncpp-dev \
+            libmpv-dev mpv fonts-noto-core fonts-noto-cjk fonts-noto-ui-core fonts-noto-color-emoji
+          fc-cache -f >/dev/null
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ env.FLUTTER_VERSION }}
+          channel: stable
+          cache: true
+      - run: |
+          flutter create --platforms=android,ios,web,linux --org com.gamestudio100 --project-name merkez_verimlilik .
+          python tool/patch_platforms.py
+          flutter pub get
+      - name: Render on the build machine (Linux desktop, no emulator)
+        run: bash tool/store_shots.sh "${{ github.event.inputs.langs }}"
+      - run: python tool/organize_store.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: store-shots
+          path: shots/store/
+          retention-days: 30
+
+  publish:
+    needs: shots
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: store-shots
+          path: all
+      - run: |
+          cd all && zip -qr ../store-graphics.zip . && cd ..
+          ls -la store-graphics.zip
+      - env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view store -R ${{ github.repository }} >/dev/null 2>&1 || \
+            gh release create store -R ${{ github.repository }} --title "Mağaza görselleri" --notes "33 dilde Android telefon/tablet, iPhone 6.7\" ve iPad 13\" ekran görüntüleri ile öne çıkan görsel (fastlane düzeninde)." --prerelease
+          gh release upload store store-graphics.zip -R ${{ github.repository }} --clobber
