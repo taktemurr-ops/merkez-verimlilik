@@ -51,3 +51,9 @@ _Son güncelleme / Last updated: 2026-11-26_
 - **Resume Builder:** Your details stay on the device; the PDF is created on the device. For some scripts (Chinese, Japanese, Korean, Hindi, Thai, etc.) a font is downloaded once from Google Fonts on first use; no resume content is sent with that download.
 
 İletişim / Contact: (yayıncı e-posta adresi / publisher e-mail)
+
+## Diğer Android mağazaları / Other Android stores
+
+Galaxy Store, Amazon Appstore ve ONE store sürümlerinde uygulama içi satın almalar o mağazanın kendi ödeme sistemiyle (Samsung In-App Purchase, Amazon In-App Purchasing, ONE store IAP) yapılır; ödeme bilgileriniz bize ulaşmaz. Amazon sürümünde reklam yoktur. Xiaomi, OPPO, vivo ve HONOR sürümlerinde uygulama içi satın alma yoktur; reklamlar Google AdMob ile gösterilir (Google Play sürümüyle aynı kurallar).
+
+In the Galaxy Store, Amazon Appstore and ONE store editions, in-app purchases go through that store's own billing (Samsung In-App Purchase, Amazon In-App Purchasing, ONE store IAP); we never receive your payment details. The Amazon edition shows no ads. The Xiaomi, OPPO, vivo and HONOR editions have no in-app purchases; ads are served by Google AdMob under the same rules as the Google Play edition.
